@@ -19,7 +19,7 @@
 
 <body>
     <!-- navbar -->
-    <div class="border-1 border-red-500 max-w-7xl mx-auto p-2 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto py-4 flex justify-between items-center">
         <div class="flex justify-start items-center gap-2">
             <img class="w-10" src="./assets/logo.png" alt="">
             <h1 class="font-extrabold text-lg text-[#006747] leading-[1.1]">Emergency<br>Service</h1>
@@ -44,12 +44,39 @@
     </div>
 
     <!-- Hero section -->
-     <div class="h-[220px] border-1 border-gray-950 w-full mx-auto text-center">
-        <img src="./assets/logo-dark.png" class="w-28 pt-1 mx-auto" alt="">
-        <h1 class="font-bold text-4xl">Emergency Service Directory</h1>
-        <P class="font-semibold text-base pt-4">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</P>
-     </div>
+    <div class="h-[220px] w-full mx-auto text-center
+     bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] pt-4">
+        <img src="./assets/logo-dark.png" class="w-28 mx-auto" alt="">
+        <h1 class="font-bold text-4xl text-[#FFFFFF]">Emergency Service Directory</h1>
+        <P class="font-semibold text-base pt-4 text-[#FFFFFF]">Government Emergency Services at Your Fingertip - A
+            Project by Government of the People's Republic of Bangladesh</P>
+    </div>
+    <!-- cart section -->
+    <div class=" border-1 border-red-700 bg-[#ecfff0]">
+        <div class="max-w-7xl mx-auto">
+            <!-- cards -->
+            <div class="card bg-base-100 w-72 shadow-2xl m my-10 ">
+                <figure class="pt-5 flex justify-between items-center px-5">
+                    <img src="./assets/emergency.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
+                    <i class="fa-regular fa-heart text-xl"></i>
+                </figure>
+                <div class="p-5 items-start text-start">
+                    <h2 class="card-title font-bold">National Emergency Number</h2>
+                    <p class="text-sm">National Emergency</p>
+                    <h2 class="card-title mt-3 font-bold text-2xl">999</h2>
+                    <p class="text-sm my-2 py-[0.15rem] px-3 bg-slate-200 rounded-lg inline">All</p>
+                    <div class="flex gap-2 w-full mt-3">
+                        <button
+                            class="btn-primary py-1 text-sm flex-1 bg-transparent border-2 border-gray-300 text-gray-500 rounded-lg"><i
+                                class="fa-regular fa-copy"></i> Copy</button>
+                        <button
+                            class="btn-primary text-sm flex-1 bg-[#00a63e] text-[#ffffff] border-none rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
 
 
     <!-- script -->
