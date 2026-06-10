@@ -18,7 +18,7 @@ for (let heartIcon of heartIcons) {
     )
 }
 
-//copy button functionality:
+//COPY button functionality:
 const copyButtons = document.getElementsByClassName("copy-btn")
 for (let copyBtn of copyButtons) {
     copyBtn.addEventListener('click',
@@ -29,6 +29,7 @@ for (let copyBtn of copyButtons) {
         }
     )
 }
+/////
 
 //Click on Card and 20 coins will reduce.
 const cards = document.getElementsByClassName('card-selection');
@@ -36,23 +37,28 @@ const cards = document.getElementsByClassName('card-selection');
 for (let card of cards) {
     card.addEventListener('click',
         function () {
-
-            // ONLY this clicked card alert
-            const card = this.closest(".card");
-
-            const name = card.querySelector(".service-type").innerText;
-            const number = card.querySelector(".service-number").innerText;
-
-            alert(`Calling ${name}\nNumber: ${number}`);
-
-
+            // declare first
             const coinValue = document.getElementById('coin-value');
+
             //validation
             if (coinValue.innerText <= 0) {
                 alert("Your coin limit is finished");
                 return;
             }
+
+            //coin value deduction:
             coinValue.innerText = parseInt(coinValue.innerText) - 20;
+
+            // targeted clicked card alert
+            const clickCard = this.closest(".card");
+            const name = clickCard.querySelector(".service-type").innerText;
+            const number = clickCard.querySelector(".service-number").innerText;
+
+            // Allow browser to update UI before showing alert
+            setTimeout(() => {
+                alert(`Calling ${name}\nNumber: ${number}`);
+            }, 0);
+
         }
     );
 }
