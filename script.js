@@ -18,7 +18,23 @@ const cards = document.getElementsByClassName('card-selection');
 for (let card of cards) {
     card.addEventListener('click',
         function () {
+
+            // calling alert
+            const cardItems = document.getElementsByClassName("card-items");
+            for (let cardItem of cardItems) {
+                const serviceName = cardItem.querySelector('p').innerText;
+                const text = cardItem.querySelectorAll('h2');
+                const number = text[1].innerText;
+                alert(`Calling ${serviceName}\nNumber: ${number}`);
+            }
+
+
             const coinValue = document.getElementById('coin-value');
+            //validation
+            if (coinValue.innerText <= 0) {
+                alert("Your coin limit is finished");
+                return;
+            }
             coinValue.innerText = parseInt(coinValue.innerText) - 20;
         }
     );
