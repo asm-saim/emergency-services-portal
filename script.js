@@ -1,5 +1,6 @@
 //heart image color change and value increment
 let value = 0;
+let copyCount = 0;
 
 const heartIcons = document.getElementsByClassName('heart');
 
@@ -17,6 +18,17 @@ for (let heartIcon of heartIcons) {
     )
 }
 
+//copy button functionality:
+const copyButtons = document.getElementsByClassName("copy-btn")
+for (let copyBtn of copyButtons) {
+    copyBtn.addEventListener('click',
+        function () {
+            const navCopy = document.getElementById("nav-copy");
+            copyCount++;
+            navCopy.innerText = copyCount;
+        }
+    )
+}
 
 //Click on Card and 20 coins will reduce.
 const cards = document.getElementsByClassName('card-selection');
