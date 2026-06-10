@@ -26,6 +26,19 @@ for (let copyBtn of copyButtons) {
             const navCopy = document.getElementById("nav-copy");
             copyCount++;
             navCopy.innerText = copyCount;
+
+            // Walks up to the parent card, then finds the number inside it
+            const textToCopy = this.closest('.card').querySelector('.service-number').innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                //alert
+                setTimeout(() => {
+                    alert("Number Copied on the Clipboard");
+                }, 0);
+            }).catch(err => {
+                console.error("Copy failed:", err);
+            });
+
+
         }
     )
 }
