@@ -44,7 +44,7 @@ for (let copyBtn of copyButtons) {
 }
 /////
 
-//Click on Card and 20 coins will reduce.
+//Click on Call button and 20 coins will reduce.
 const cards = document.getElementsByClassName('card-selection');
 
 for (let card of cards) {
@@ -71,6 +71,26 @@ for (let card of cards) {
             setTimeout(() => {
                 alert(`Calling ${name}\nNumber: ${number}`);
             }, 0);
+
+            //get current time and inject into history section
+            const now = new Date();
+            const time = now.toLocaleTimeString();
+
+            const historyContainer = document.getElementById("call-history");
+
+            const historyItem = document.createElement("div");
+            historyItem.className = "text-start bg-slate-100 rounded-md p-2 flex justify-between items-center mt-2";
+            historyItem.innerHTML = `
+            <div>
+                <h2 class="card-title font-bold text-lg">${name}</h2>
+                <h2 class="card-title mt-1 font-medium text-sm text-gray-500">${number}</h2>
+            </div>
+            <div>
+                <p class="time text-gray-500 font-normal text-sm">${time}</p>
+            </div>
+        `;
+
+            historyContainer.prepend(historyItem);
 
         }
     );

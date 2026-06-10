@@ -119,21 +119,14 @@
             <div class="card bg-base-100 w-74 shadow-2xl row-span-3 p-5">
                 <div class="flex justify-between items-center mb-4">
                     <p class="font-semibold text-lg"><i class="fa-regular fa-clock"></i> Call History</p>
-                    <button class=" text-sm px-3 py-2 bg-[#00a63e] text-[#ffffff] border-none rounded-3xl"> Clear</button>
+                    <button class=" text-sm px-3 py-2 bg-[#00a63e] text-[#ffffff] border-none rounded-3xl">
+                        Clear</button>
 
                 </div>
 
                 <!--call history -->
-                <div class="text-start bg-slate-100 rounded-md p-2 flex justify-between items-center">
-                    <div>
-                        <h2 class="card-title font-bold text-lg">Police</h2>
-                        <h2 class="card-title mt-1 font-medium text-sm text-gray-500">1994-999999</h2>
-                    </div>
-                    <div>
-                        <p class="time text-gray-500 font-normal text-sm">10:22:31 PM</p>
-                    </div>
-
-
+                <div id="call-history" class="flex flex-col gap-2">
+                    <!-- history items will be injected here dynamically -->
                 </div>
                 <!--  -->
             </div>
