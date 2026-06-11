@@ -19,13 +19,13 @@
 
 <body>
     <!-- navbar -->
-    <div class="max-w-7xl mx-auto py-4 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto py-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-2">
         <div class="flex justify-start items-center gap-2">
             <img class="w-10" src="./assets/logo.png" alt="">
             <h1 class="font-extrabold text-lg text-[#006747] leading-[1.1]">Emergency<br>Service</h1>
         </div>
 
-        <div class="flex items-center gap-5">
+        <div class="flex flex-wrap justify-center items-center gap-2 sm:gap-5">
             <div class="flex justify-start items-center gap-2 bg-[#ecfff0] px-5 py-2  rounded-3xl">
                 <p id="heart-add" class="font-bold text-base">0</p>
                 <img class="w-6" src="./assets/heart.png" alt="">
@@ -34,7 +34,7 @@
                 <p id="coin-value" class="font-bold text-base">100</p>
                 <img class="w-6" src="./assets/coin.png" alt="">
             </div>
-            <div class="bg-[#00A63E] px-4 py-2  rounded-3xl">
+            <div class="bg-[#00A63E] px-3 sm:px-4 py-2 rounded-3xl">
                 <h1 class="text-white text-base font-medium"><span id="nav-copy">0</span> Copy</h1>
             </div>
 
@@ -53,9 +53,9 @@
     </div>
     <!-- cart section -->
     <div class="bg-[#ecfff0]">
-        <div class="max-w-7xl grid grid-cols-4 grid-rows-2 gap-8 py-10 mx-auto">
+        <div class="max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-10 px-10 lg:px-0 mx-auto">
             <!-- cards -->
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74 shadow-2xl">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/emergency.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74 shadow-2xl">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/police.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74 shadow-2xl">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/fire-service.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -116,10 +116,11 @@
                 </div>
             </div>
             <!-- History -->
-            <div class="card bg-base-100 w-74 shadow-2xl row-span-3 p-5">
+            <div class="card bg-base-100 w-full lg:w-74 shadow-2xl row-span-1 lg:row-span-3 p-5">
                 <div class="flex justify-between items-center mb-4">
                     <p class="font-semibold text-lg"><i class="fa-regular fa-clock"></i> Call History</p>
-                    <button id="clear-history" class=" text-sm px-3 py-2 bg-[#00a63e] text-[#ffffff] border-none rounded-3xl">
+                    <button id="clear-history"
+                        class=" text-sm px-3 py-2 bg-[#00a63e] text-[#ffffff] border-none rounded-3xl">
                         Clear</button>
 
                 </div>
@@ -130,7 +131,7 @@
                 </div>
                 <!--  -->
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74 shadow-2xl">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/ambulance.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -150,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74    shadow-2xl  ">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/mother.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -170,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74    shadow-2xl  ">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/no-corruption.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -190,7 +191,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74    shadow-2xl  ">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/electrical-energy.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -211,7 +212,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74    shadow-2xl  ">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/brac.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -231,7 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-base-100 w-74 shadow-2xl  ">
+            <div class="card bg-base-100 w-full lg:w-74    shadow-2xl  ">
                 <figure class="pt-5 flex justify-between items-center px-5">
                     <img src="./assets/Bangladesh-Railway.png" alt="Shoes" class="w-12 bg-red-100 rounded-md p-2" />
                     <i class="heart fa-regular fa-heart text-xl"></i>
@@ -258,8 +259,9 @@
     </div>
 
     <!-- footer -->
-    <div class="mx-auto text-center py-4 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full">
-        <footer><small class="text-sm text-white font-normal">© 2026 Emergency Directory. All rights
+    <div
+        class="mx-auto text-center py-3 px-4 sm:py-4 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full">
+        <footer><small class="text-xs sm:text-sm text-white font-normal">© 2026 Emergency Directory. All rights
                 reserved.</small></footer>
     </div>
 
