@@ -76,7 +76,7 @@ The project was built with a strong focus on **clean UI design**, **interactive 
   </tr>
   <tr>
     <td><img src="./screenshots/call-history.png" alt="Call History Section"></td>
-    <td><img src="./screenshots/mobile-full-page.png" alt="Mobile Responsive View"></td>
+    <td><img src="./screenshots/mobile-full-page.png" alt="Mobile Responsive View"          height="600" width="300"></td>
   </tr>
 </table>
 
