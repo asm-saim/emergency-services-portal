@@ -83,7 +83,7 @@ for (let card of cards) {
             historyItem.className = "text-start bg-slate-100 rounded-md p-2 flex justify-between items-center mt-2";
             historyItem.innerHTML = `
             <div>
-                <h2 class="card-title font-bold text-lg">${name}</h2>
+                <h2 class="card-title font-semibold text-base">${name}</h2>
                 <h2 class="card-title mt-1 font-medium text-sm text-gray-500">${number}</h2>
             </div>
             <div>
