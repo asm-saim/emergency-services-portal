@@ -72,6 +72,7 @@ for (let card of cards) {
                 alert(`Calling ${name}\nNumber: ${number}`);
             }, 0);
 
+
             //get current time and inject into history section
             const now = new Date();
             const time = now.toLocaleTimeString();
@@ -95,3 +96,13 @@ for (let card of cards) {
         }
     );
 }
+
+// clear Button:
+
+const clearButton = document.getElementById("clear-history");
+clearButton.addEventListener("click",
+    function () {
+        const historySection = document.getElementById("call-history");
+        historySection.innerText = "";
+    }
+)
